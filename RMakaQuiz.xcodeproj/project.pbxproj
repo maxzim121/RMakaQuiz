@@ -16,6 +16,10 @@
 		5ACD700A29B602A900505A41 /* RMakaQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD700929B602A900505A41 /* RMakaQuizTests.swift */; };
 		5ACD701429B602A900505A41 /* RMakaQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD701329B602A900505A41 /* RMakaQuizUITests.swift */; };
 		5ACD701629B602A900505A41 /* RMakaQuizUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD701529B602A900505A41 /* RMakaQuizUITestsLaunchTests.swift */; };
+		5ACD702529B747FB00505A41 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACD702429B747FB00505A41 /* Extensions.swift */; };
+		5AD8947429F7C129007070CD /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8947329F7C129007070CD /* CharacterModel.swift */; };
+		5AD8947629F7C445007070CD /* CharacterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8947529F7C445007070CD /* CharacterLoader.swift */; };
+		5AD8947829F7C98F007070CD /* CharacterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD8947729F7C98F007070CD /* CharacterFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		5ACD700F29B602A900505A41 /* RMakaQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RMakaQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ACD701329B602A900505A41 /* RMakaQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMakaQuizUITests.swift; sourceTree = "<group>"; };
 		5ACD701529B602A900505A41 /* RMakaQuizUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMakaQuizUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5ACD702429B747FB00505A41 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5AD8947329F7C129007070CD /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		5AD8947529F7C445007070CD /* CharacterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLoader.swift; sourceTree = "<group>"; };
+		5AD8947729F7C98F007070CD /* CharacterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,8 @@
 		5ACD6FE629B602A800505A41 = {
 			isa = PBXGroup;
 			children = (
+				5AD8947229F7C109007070CD /* Models */,
+				5AD8947029F7C0D8007070CD /* Services  */,
 				5ACD6FF129B602A800505A41 /* RMakaQuiz */,
 				5ACD700829B602A900505A41 /* RMakaQuizTests */,
 				5ACD701229B602A900505A41 /* RMakaQuizUITests */,
@@ -106,6 +116,7 @@
 				5ACD6FFB29B602A900505A41 /* Assets.xcassets */,
 				5ACD6FFD29B602A900505A41 /* LaunchScreen.storyboard */,
 				5ACD700029B602A900505A41 /* Info.plist */,
+				5ACD702429B747FB00505A41 /* Extensions.swift */,
 			);
 			path = RMakaQuiz;
 			sourceTree = "<group>";
@@ -125,6 +136,23 @@
 				5ACD701529B602A900505A41 /* RMakaQuizUITestsLaunchTests.swift */,
 			);
 			path = RMakaQuizUITests;
+			sourceTree = "<group>";
+		};
+		5AD8947029F7C0D8007070CD /* Services  */ = {
+			isa = PBXGroup;
+			children = (
+				5AD8947529F7C445007070CD /* CharacterLoader.swift */,
+				5AD8947729F7C98F007070CD /* CharacterFactory.swift */,
+			);
+			path = "Services ";
+			sourceTree = "<group>";
+		};
+		5AD8947229F7C109007070CD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AD8947329F7C129007070CD /* CharacterModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD8947829F7C98F007070CD /* CharacterFactory.swift in Sources */,
+				5AD8947429F7C129007070CD /* CharacterModel.swift in Sources */,
 				5ACD6FF729B602A800505A41 /* ViewController.swift in Sources */,
 				5ACD6FF329B602A800505A41 /* AppDelegate.swift in Sources */,
 				5ACD6FF529B602A800505A41 /* SceneDelegate.swift in Sources */,
+				5AD8947629F7C445007070CD /* CharacterLoader.swift in Sources */,
+				5ACD702529B747FB00505A41 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
